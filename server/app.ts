@@ -34,7 +34,7 @@ app.use("/uploads", express.static("uploads"));
 
 // routes
 app.get("/", (req: Request, res: Response) => {
-  res.json({ success: true, message: "Hello! Welocome to Store101😊" });
+  res.json({ success: true, message: "Hello! Welcome to Store101😊" });
 });
 app.use("/api/v1", appRoutes);
 
