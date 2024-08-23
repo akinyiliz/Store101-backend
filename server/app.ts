@@ -12,6 +12,7 @@ const app = express();
 // Cross-Origin Resource Sharing
 const allowedOrigins: string[] = [
   "https://store101-frontend.vercel.app",
+  "https://store101-admin.vercel.app",
   "http://localhost:3000",
   "http://localhost:3001",
   "http://localhost:5173",
