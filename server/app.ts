@@ -1,10 +1,9 @@
 import dotenv from "dotenv";
-import express from "express";
+import express, { Request, Response } from "express";
 import cors, { CorsOptions } from "cors";
 
 import connectDB from "../config/db";
 import appRoutes from "../routes/index";
-import path from "path";
 
 dotenv.config();
 
@@ -34,6 +33,9 @@ app.use(express.urlencoded({ extended: false }));
 app.use("/uploads", express.static("uploads"));
 
 // routes
+app.get("/", (req: Request, res: Response) => {
+  res.json({ success: true, message: "Hello! Welocome to Store101😊" });
+});
 app.use("/api/v1", appRoutes);
 
 const PORT = process.env.PORT || 8000;
