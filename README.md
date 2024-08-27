@@ -109,6 +109,10 @@ npm run dev
 
 The backend server will start running on `http://localhost:8000` (or your specified port).
 
+## To Be Done
+
+- **Payment Integration**: Implement payment gateway integration to allow users to securely process transactions during checkout.
+
 ## Contributing
 
 We welcome contributions to enhance the Store101 Backend. Feel free to open issues or submit pull requests on GitHub.
